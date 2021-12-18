@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    html
+    {
+        scroll-behavior: smooth;
+    }
+    body
+    {
+        background: #F7C851;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      background: #F7C851;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+      transition: all .5s ease-in-out;
+    }
+
+    .icon {
+      color: white;
+      font-size: 25px;
+      padding: 5px;
+      font-weight: 700;
+    }
+
+    .nav .navmenu {
+      list-style: none;
+      padding: 10px;
+    }
+
+    .navmenu li,
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: #413ADA;
+      font-weight: 600;
+      margin: 2px 5px;
+    }
+
+    .intro {
+      background-image: url('images/background-img.webp');
+      background-attachment: fixed;
+      height: 95vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text {
+      height: 300px;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      text-align: center;
+
+    }
+
+    .text .intro-text {
+      font-size: 60px;
+      font-weight: 800;
+      color: #413ADA;
+    }
+
+    .text .sup-text {
+      font-size: 36px;
+      font-weight: 600;
+      color: #F47A62;
+    }
+
+    .intro a {
+      text-decoration: none;
+      padding: 10px 60px;
+      margin: 30px 0;
+      color: white;
+      background-color: #413ADA;
+    }
+
+    .qoute-box {
+      height: 70vh;
+      width: 100%;
+      position: relative;
+      background-color: #413ADA;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .qicon {
+      width: 50px;
+      margin-bottom: 25px;
+    }
+
+    .qoute-cont .main-txt {
+      display: block;
+      margin: auto;
+      width: 100%;
+      font-weight: 600;
+    }
+
+    .qoute-cont .sup-txt {
+      display: block;
+      margin: auto;
+      width: 40%;
+      font-weight: 200;
+    }
+
+    .qoute-box a {
+      border: 1px solid white;
+      padding: 10px 30px;
+      margin: 20px 0px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .qoute-box a:hover {
+      background-color: #251f96;
+      border: 2px solid #413ADA;
+      transition: border .3s ease-in;
+    }
+
+    .imgbox {
+      background-image: url('images/img-box.webp');
+      height: 70vh;
+      width: 100%;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    .subcat {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      position: relative;
+    }
+
+    .cat {
+      height: 60vh;
+      width: 50%;
+
+    }
+
+    .subcat .sci {
+      background-color: #0EC167;
+      background-image: url(images/sci.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: left;
+    }
+
+    .subcat .tech {
+      background-color: #F47A62;
+      background-image: url(images/tech.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: left;
+    }
+
+    .subcat .eng {
+      background-color: #F8C853;
+      background-image: url(images/engneering.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+
+    .subcat .math {
+      background-color: #413ADA;
+      background-image: url(images/math.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+
+    .review {
+      width: 100%;
+      height: auto;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #413ADA;
+      position: relative;
+    }
+
+    .review h4 {
+      width: 30%;
+      font-size: 15px;
+      text-align: justify;
+    }
+
+    .photo-gal {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      margin: 20px;
+
+    }
+
+    .photo-gal .gal-img {
+      height: 260px;
+      width: 280px;
+      margin: 10px;
+
+    }
+
+    .bmenu {
+      display: none;
+    }
+
+    footer {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 10vh;
+      text-align: center;
+      color: #fff;
+      background-color: #F8C853;
+    }
+
+    @media(max-width:760px) {
+      .photo-gal .gal-img {
+        height: 200px;
+        width: 180px;
+        margin: 10px;
+
+      }
+
+      .qoute-cont .sup-txt {
+
+        width: 85%;
+
+      }
+
+      .review h4 {
+        width: 50%;
+        font-size: 15px;
+        text-align: justify;
+      }
+
+      .cat {
+        height: 60vh;
+        width: 100%;
+
+      }
+
+      .nav {
+        text-align: center;
+        flex-direction: column;
+        
+        border-radius: 0 0 20px 20px;
+      }
+
+      .nav .navmenu li {
+        display: block;
+        padding: 5px;
+        font-size: 20px;
+        font-weight: 800px;
+      }
+
+      .bmenu {
+        height: 50px;
+        width: 50px;
+        display: block;
+
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+      }
+
+      .line1,
+      .line2,
+      .line3 {
+        background-color: #EF613A;
+        height: 4px;
+        width: 32px;
+        margin: 6px;
+      }
+
+      .nav .navmenu {
+        /* display: none; */
+        transition: all .8s ease-in-out;
+        height: 5px;
+        
+        overflow: hidden;
+      }
+
+      .show {
+        display: sticky !important;
+        height: 50vh !important;
+      }
+    }
